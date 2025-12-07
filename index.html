@@ -5,103 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ahsan Ashraf</title>
   <style>
-    /* Use San Francisco font */
-    @supports (font: -apple-system-body) {
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "San Francisco", Helvetica, Arial, sans-serif;
-      }
-    }
     body {
       margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      color: #333;
-      font-size: 18px;
-      line-height: 1.6;
-      display: flex;
-      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "San Francisco", sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.7;
     }
+
     .container {
-      max-width: 700px;
-      width: 100%;
+      max-width: 850px;
+      margin: 0 auto;
       padding: 40px 20px;
     }
-    header {
-      text-align: center;
+
+    /* Header layout */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 40px;
     }
-    header h1 {
-      font-size: 42px;
-      margin: 0;
+
+    h1 {
+      font-size: 46px;
       font-weight: 700;
+      margin: 0;
     }
+
+    .subtitle {
+      font-size: 22px;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    .left-header {
+      max-width: 65%;
+    }
+
     .photo {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: #ddd;
-      margin: 25px auto;
-      display: block;
+      width: 170px;
+      height: 170px;
+      border-radius: 14px;
+      background: #eee;
       background-size: cover;
       background-position: center;
     }
-    nav {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #0070c9;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
+
     section {
-      margin-bottom: 60px;
+      margin-top: 70px;
     }
+
     section h2 {
       font-size: 28px;
-      margin-bottom: 15px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .list-leadership {
+      margin-left: 20px;
+    }
+
+    a {
+      color: #111;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
   <div class="container">
-    <header>
-      <h1>Ahsan Ashraf</h1>
+
+    <!-- Header with name + photo -->
+    <div class="header">
+      <div class="left-header">
+        <h1>Ahsan Ashraf</h1>
+        <div class="subtitle">AI and ML Leader</div>
+      </div>
       <div class="photo" style="background-image: url('your-photo.jpg');"></div>
-    </header>
+    </div>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
+    <!-- Home / About -->
+    <section id="home">
       <h2>About</h2>
-      <p>
-        Write something about yourself here. This text is just a placeholder.
-        You can add as much content as you want — the page will scroll
-        naturally.
-      </p>
-    </section>
+      <p>I am a machine‑learning and AI leader driving strategic innovation in data and algorithmic systems at Airbnb. I direct the ML roadmap for platform integrity, leading teams that build and deploy multimodal foundation models to mitigate enterprise‑level fraud, content risk, and ensure trust and safety across the platform.</p> 
+      <p>My work spans generative‑AI detection, architecting novel Graph ML/GNN systems for fraud detection, and leveraging LLM‑based agents to automate human‑in‑the‑loop evaluation pipelines for scalable enforcement. I also oversee modernization of ML infrastructure, migrating core systems to advanced DNN and Transformer architectures, thereby improving throughput, latency, and reliability at scale.</p> 
+      
+      <p>Previously I led teams at Pinterest building recommendation algorithms for Home, Closeup, and Search. I combine deep technical expertise with strategic leadership to deliver ML/AI solutions that shape product direction and deliver measurable business impact.</p> 
+      
+      <p>Concurrently, I teach at the Data Science Institute at Brown University, where I translate rigorous research informed by my background in complex systems and physics into real‑world data science and algorithmic applications.</p> 
+      
+      <p>For a full overview of my experience, publications, patents, and teaching, please see my <a href="https://linkedin.com/in/aashraf04" target="_blank">LinkedIn profile</a>.</p>
+      
+      </section>
 
-    <section id="work">
-      <h2>Work</h2>
-      <p>
-        Add details about your work, projects, or CV summary here.
-      </p>
-    </section>
+    <!-- Leadership & Impact -->
+    <!-- <section id="leadership">
+      <h2>Leadership & Impact</h2>
+      <ul class="list-leadership">
+        <li>Led teams of data scientists and engineers, building ML systems for content integrity and recommendations impacting millions of users.</li>
+        <li>Developed strategy for ML & data-driven products, balancing business objectives and long-term product health.</li>
+        <li>Mentored and taught students and early career researchers, fostering talent pipelines.</li>
+      </ul>
+    </section> -->
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>
-        You can place email, social links, or any contact details here.
-      </p>
+      <p>Email: aashraf04 [at] gmail [dot] com<br>
+      : <a href="https://linkedin.com/in/aashraf04" target="_blank">LinkedIn</a><br>
     </section>
+
   </div>
+
 </body>
 </html>
